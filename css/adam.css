@@ -1,0 +1,101 @@
+
+
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300,100);
+
+html, body {
+	width: 100%;
+    height: 100%;    
+}
+
+body {
+	font-family: 'Lato';
+    background-color: #01212e;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    z-index: -999;
+}
+
+
+.some-space {
+	position: absolute;
+    text-align: center;
+    font-weight: 300;
+    color: #fff;
+    top: 50px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    z-index: -999;
+}
+
+
+.some-space > h1 {
+	font-size: 4.5em;
+    font-weight: 300;
+	letter-spacing: .2em;
+}
+
+
+
+.some-space > p {
+	font-size: 1em;
+    padding: 5px;
+	opacity: .7;
+    letter-spacing: .1em;
+}
+
+.home-photo {
+	width: 175px;
+	height: 175px;
+    margin: 30px auto;
+}
+
+.socmed {
+    position:fixed;
+    opacity: .7;
+    padding: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 0px;
+}
+
+.socmed > a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    z-index: 99;
+}
+
+@media screen and (max-width: 768px) {
+    .some-space {
+        top: 50px;
+    }
+    
+    .some-space > h1 {
+        font-size: 4em;
+        letter-spacing: .1em;
+        
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .some-space {
+        top: 0px;
+    }
+    
+    .socmed {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .socmed > a {
+        padding: 10px;
+    }
+}
