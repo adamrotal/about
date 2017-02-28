@@ -11,9 +11,9 @@ body {
 
 #particles-js {
     width: 100%;
-    height: auto;
+    height: 100%;
     background-image: url("");
-    background-repeat: repeat-x;
+    background-repeat: repeat-y;
     background-size: cover;
     
     z-index: -999;
