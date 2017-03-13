@@ -100,12 +100,12 @@ body {
 	z-index: 1;
 }
 
-a, a:hover, a:active, a:visited, a:-webkit-any-link {
+a, a:hover, a:active, a:visited {
 	text-decoration:none;
 	color: #000000;
 }
 
-button {
+.content a {
 	color: #000000;
 	padding: 10px 20px;
 	text-align: center;
@@ -117,7 +117,7 @@ button {
 	border-radius: 25px;
 }
 
-button:hover {
+.content a:hover {
 	background-color: #EB5E28;
 	border: 2px solid #EB5E28;
 }
@@ -134,7 +134,6 @@ button:hover {
     .some-space > h1 {
         font-size: 4em;
         letter-spacing: .1em;
-
     }
 }
 
