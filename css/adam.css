@@ -1,35 +1,38 @@
 html, body {
 	width: 100%;
-    height: 100%;    
+  height: 100%;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #01212e;
+    background-color: #ffffff;
     margin: 0;
 }
 
 #particles-js {
-    width: 100%;
-    height: 100%;
+    /*width: 100%;
+    height: 100%;*/
+		display: block;
+		position: fixed;
     background-image: url("");
     background-repeat: repeat-y;
     background-size: cover;
-    
-    z-index: -999;
+		background-attachment: fixed;
+
+    z-index: -1;
 }
 
 
 .some-space {
 	position: absolute;
-    text-align: center;
-    font-weight: 300;
-    color: #fff;
-    top: 50px;
-    bottom: 0px;
-    left: 0;
-    right: 0;
-    z-index: -999;
+  text-align: center;
+  font-weight: 300;
+  color: #000000;
+  top: 50px;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  z-index: -999;
 }
 
 
@@ -38,8 +41,6 @@ body {
     font-weight: 300;
 	letter-spacing: .2em;
 }
-
-
 
 .some-space > p {
 	font-size: 1em;
@@ -51,34 +52,89 @@ body {
 .home-photo {
 	width: 175px;
 	height: 175px;
-    margin: 30px auto;
+  margin: 30px auto;
+	position: absolute;
+  text-align: center;
+  font-weight: 300;
+  color: #000000;
+  top: 280px;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .socmed {
-    position:fixed;
     opacity: .7;
-    padding: 20px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    bottom: 0px;
+		position: absolute;
+	  text-align: center;
+	  font-weight: 300;
+	  color: #000000;
+		margin-bottom: 30px;
+	  top: 600px;
+	  left: 0;
+	  right: 0;
+	  z-index: 1;
 }
 
-.socmed > a {
+.socmed a {
     padding: 10px;
     text-decoration: none;
-    color: white;
+    color: #000;
     z-index: 99;
+		transition: background-color 0.5s ease;
+}
+
+.socmed a:hover {
+    color: #EB5E28;
+}
+
+.content {
+	position: absolute;
+	text-align: center;
+	color: #000000;
+	margin-bottom: 30px;
+	top: 520px;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+a, a:hover, a:active, a:visited, a:-webkit-any-link {
+	text-decoration:none;
+	color: #000000;
+}
+
+button {
+	color: #000000;
+	padding: 10px 20px;
+	text-align: center;
+	font-size: 14px;
+	cursor: pointer;
+	transition: background-color 0.5s ease;
+	background-color: transparent;
+	border: 2px solid #000000;
+	border-radius: 25px;
+}
+
+button:hover {
+	background-color: #EB5E28;
+	border: 2px solid #EB5E28;
 }
 
 @media screen and (max-width: 768px) {
-    .some-space {
+		#particles-js {
+			position: absolute;
+		}
+
+		.some-space {
         top: 50px;
     }
-    
+
     .some-space > h1 {
         font-size: 4em;
         letter-spacing: .1em;
-        
+
     }
 }
 
@@ -86,13 +142,9 @@ body {
     .some-space {
         top: 0px;
     }
-    
-    .socmed {
-        width: 100%;
-        text-align: center;
-    }
-    
-    .socmed > a {
-        padding: 10px;
-    }
+
+
+		.home-photo {
+			top: 300px;
+		}
 }
