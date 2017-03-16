@@ -15,6 +15,7 @@
 
 /* color : #184554*/
 
+
 .sidebar .nav p  {
   font-size: 14px;
   text-transform: none;
@@ -200,6 +201,10 @@
   text-align: left;
   font-size: 20px;
   margin-bottom: 20px;
+}
+
+.portfolio-modal .modal-body .img-noskip {
+  margin: 0 auto;
 }
 
 .portfolio-modal .close-modal {
