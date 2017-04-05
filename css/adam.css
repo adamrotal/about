@@ -122,6 +122,8 @@ a, a:hover, a:active, a:visited {
 	border: 2px solid #EB5E28;
 }
 
+
+
 @media screen and (max-width: 768px) {
 		#particles-js {
 			position: absolute;
