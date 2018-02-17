@@ -229,7 +229,7 @@
 	text-align: left;
 }
 
-.portfolio-modal .modal-body .product-definition ul {
+.portfolio-modal .modal-body .product-definition ul, .portfolio-modal .modal-body .proses ul {
   list-style: disc;
   padding-left: 40px;
   font-family: "Helvetica", Arial, sans-serif;
@@ -243,6 +243,8 @@
   line-height: 28px;
   text-align: left;
 }
+
+
 
 @media (max-width: 991px){
     .navbar-nav > li.sidebar-footer {
