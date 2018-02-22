@@ -47,8 +47,9 @@
 }
 
 #about-description p {
-  font-size: 14px;
+  font-size: 24px;
   line-height: 1.58;
+  padding-top: 30px;
 }
 
 .typo-line i {
@@ -246,7 +247,7 @@
 
 
 
-@media (max-width: 991px){
+@media (max-width: 960px){
     .navbar-nav > li.sidebar-footer {
       font-size: 10px;
       position: absolute;
@@ -272,7 +273,7 @@
     }
 
     #about-description p {
-      font-size: 14px;
+      font-size: 18px;
     }
 
     .filter-wrapper {
@@ -288,5 +289,21 @@
 
     .portfolio-modal .modal-body p {
       font-size: 14px;
+    }
+}
+
+@media (max-width: 768px){
+    #about-description p {
+      font-size: 18px;
+    }
+}
+
+@media (max-width: 480px){
+    #about-description p {
+      font-size: 14px;
+    }
+
+    .content {
+      margin-top: 20px;
     }
 }
